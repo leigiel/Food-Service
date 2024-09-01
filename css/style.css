@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: poppins;
+}
+.navcontainer{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff9ea;
+    height: 108px;
+    align-items: center;
+    padding: 0px 140px;
+
+}
+
+.navlogo{
+
+    width: 140px;
+    height: 45px;
+
+}
+
+nav ul li{
+
+    list-style: none;
+    color: #6b6963;
+    font-weight: 600px;
+}
+
+nav ul{
+
+    display: flex;
+    gap: 40px;
+
+}
+
+.navicon{
+
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.signin{
+
+    background-color: #ffcb45;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+
+}
+
+.herocontainer{
+    background-image: url('/images/shapes.png');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12px 140px;
+
+}
+
+.leftcontainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px ;
+}
+
+.howitworkscontainer{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.what-weserve-img{
+    display: flex;
+    justify-items: center;
+    margin: 0 200px;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.serve-img{
+    width: 180px;
+    height: 180px;
+}
