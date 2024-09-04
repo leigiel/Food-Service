@@ -5,75 +5,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Service</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- fontawesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- inter and readex pro font -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Readex+Pro:wght@160..700&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body>
-    <header class="navcontainer">
-        <img class="navlogo" src="./images/letsfood.png" alt="Let'sFood">
+
+    <!-- nav-bar -->
+
+    <header class="nav-bar-container">
 
 
         <nav>
-            <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>how it works</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <div class="navicon">
-    
-                <i class="fa-solid fa-magnifying-glass fa-xl search"></i>
-                <i class="fa-solid fa-cart-shopping fa-xl cart"></i>
-            <button class="signin"><i style="margin-right: 10px;" class="fa-solid fa-arrow-right-to-bracket"></i>Sign
-                in</button>
-        </div>
 
+            <div class="logo-LetsFood">
+                <a href="#home"><img src="./images/logo.png" alt="Let'sFood"></a>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#home"
+                            style="color: black; text-decoration: underline; text-decoration-color: #ffcb45; text-decoration-thickness: 3px; text-underline-offset: 5px">Home</a>
+                    </li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-icon">
+
+                <div>
+                    <i class="fa-solid fa-magnifying-glass fa-xl search"></i>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cart-shopping fa-xl cart"></i>
+                </div>
+
+                <button class="signin button">
+                    <i style="margin-right: 10px; vertical-align: middle;"
+                        class="fa-solid fa-arrow-right-to-bracket"></i>Sign in
+                </button>
+
+            </div>
+
+        </nav>
 
     </header>
-    <section class="herocontainer">
-        <div class="leftcontainer">
-            <div class="herocontent">
-                <p style="font-size: 70px; color: #1d1d1d;font-weight: 600; line-height: 75px;">Be The Fastest In <br>Delivery Your <span style="color: #ffcb45;">Food</span></p>
-                <p style="color: #9c9890;">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit ut aliquam, purus sit amet</p>
+
+    <!-- hero section -->
+    <section class="hero-container">
+        <div class="hero-content">
+
+            <div class="hero-left-container">
+                <h1 style="font-size: 48px; font-weight: bold;">Be The Fastest In <br> Delivery Your
+                    <span style="color: #ffcb45;">Food</span>
+                </h1>
+                <p class="font-ash">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                </p>
+                <button class="button">Get Started</button>
             </div>
-            <img style="height: 500px;" src="/images/img-hero.png" alt="">  
 
-
+            <div class="hero-right-container">
+                <div>
+                    <img style="width: 300px;" src="./images/img-hero@2x.png" alt="">
+                </div>
+            </div>
         </div>
 
-    </section>  
+    </section>
+    <!-- how it works section -->
 
-    <section class="howitworkscontainer">
-        <p style="color: #ffcb45; text-align: center;font-size: 20px;">How it works</p>
-        <h3 style="text-align: center; font-size: 25px;">What We Serve</h3>
-        <p style="text-align: center;">Product Quality Is Our Priority, And Always Guarantees <br> Halal And Safety Until It Is In Your Hands.</p>
-        <div class="what-weserve-img">
+    <section class="how-it-works-container ">
+        <div class="top-container">
+            <p class="size22" style="color: #ffcb45;">How it works</p>
+            <h2 class="size32">What We Serve</h2>
+            <p class="size22 font-ash">Product Quality Is Our Priority, And Always Guarantees <br> Halal And Safety
+                Until It
+                Is In Your Hands.</p>
+        </div>
+        <div class="how-it-works-img">
             <div>
-                <img class="serve-img" src="/images/order.png" alt="">
-                <h3 style="margin: 20px;">Easy To Order</h3>
-                <p style="color: #9c9890;">You only order through the app</p>
+                <img src="./images/order 1.png" alt="order">
+                <h3 class="size28">Easy To Order</h3>
+                <p class="font-ash">You only order through <br> the app</p>
             </div>
             <div>
-                <img class="serve-img" src="/images/delivery.png" alt="">
-                <h3 style="margin: 20px;">Fastest Delivary</h3>
-                <p style="color: #9c9890;">Delivery will be on time</p>
+                <img src="./images/delivery 1.png" alt="delivery">
+                <h3 class="size28">Fastest Delivery</h3>
+                <p class="font-ash">Delivery will be on <br> time</p>
             </div>
             <div>
-                <img class="serve-img" src="/images/courier.png" alt="">
-                <h3 style="margin: 20px;">Best Quality</h3>
-                <p style="color: #9c9890;">The best quality of food for you</p>
+                <img src="./images/courier 1.png" alt="">
+                <h3 class="size28">Best Quality</h3>
+                <p class="font-ash">The best quality of food <br> for you</p>
             </div>
         </div>
     </section>
+
+    <!-- menu section -->
+
+    <section class="menu-container">
+
+        <div>
+            <p class="size22 font-ash" style="color: #ffcb45;">Our menu</p>
+            <h2 class="size32 ">Our Popular Menu</h2>
+            <p class="size22 font-ash">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit ut aliquam</p>
+        </div>
+
+        <div class="menu-items">
+            <div>
+                <img src="./images/menu1.png" alt="">
+                <p>Mie Ramen</p>
+                <p class="font-ash">lorem ipsum</p>
+            </div>
+            <div>
+                <img src="./images/menu2.png" alt="">
+                <p>Salad Tahu</p>
+                <p class="font-ash">lorem ipsum</p>
+            </div>
+            <div>
+                <img src="./images/menu3.png" alt="">
+                <p>Roti Bakar</p>
+                <p class="font-ash">lorem ipsum</p>
+            </div>
+            <div><img src="./images/menu4.png" alt="">
+                <p>Spaghetti</p>
+                <p class="font-ash">lorem ipsum</p>
+            </div>
+        </div>
+
+        <div><button class="button">More Menu</button></div>
+
+    </section>
+    <!--  review section -->
+    <section class="review-container">
+        <div class="review-img-tile">
+            <div class="top-review-img"><img src="./images/review1.png" alt=""></div>
+            <div class="bottom-review-img">
+                <img src="./images/review2.png" alt="">
+                <img src="./images/review3.png" alt="">
+            </div>
+        </div>
+        <div class="review-heading">
+            <div>
+                <p class="size22 font-ash" style="color: #ffcb45;">What they say</p>
+                <h2 class="size32 font-ash">What Our Customers Say <br> About Us</h2>
+            </div>
+            <div class="review-comment">
+                <div>
+                    <p>Naura Silvana</p>
+                    <p class="font-ash">“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                        amet luctus venenatis.”</p>
+                </div>
+                <div>
+                    <p>Azura </p>
+                    <p class="font-ash">“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                        amet luctus venenatis.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- join-us section -->
+    <section class="join-us-section">
+        <div>
+            <h3>Join our member and get discount up to 50%</h3>
+        </div>
+        <div class="button"><button>Sign Up</button></div>
+    </section>
+
+    <!-- footer section -->
+   <!-- footer section -->
+<section class="footer-container">
+    <div class="first-column">
+        <div class="logo-LetsFood">
+            <img src="./images/logo.png" alt="Let's Food Logo">
+        </div>
+        <div>
+            <p class="font-ash">Jalan Semangka Raya, Telaga Murni, Cikarang Barat, Kab. Bekasi</p>
+        </div>
+        <div class="social-logo">
+            <div><button><i class="fa-brands fa-instagram"></i></button></div>
+            <div><button><i class="fa-brands fa-facebook-f"></i></button></div>
+            <div><button><i class="fa-brands fa-twitter"></i></button></div>
+        </div>
+    </div>
+    <div class="second-column">
+        <p>Company</p>
+        <p class="font-ash">About Us</p>
+        <p class="font-ash">Career</p>
+        <p class="font-ash">How It Works</p>
+    </div>
+    <div class="third-column">
+        <p>Policy</p>
+        <p class="font-ash">FAQ</p>
+        <p class="font-ash">Privacy</p>
+        <p class="font-ash">Shipping</p>
+    </div>
+    <div class="fourth-column">
+        <p>Get In Touch</p>
+        <p class="font-ash">+62 896 7311 2766</p>
+        <p class="font-ash">food@example.com</p>
+    </div>
+</section>
+
+<!-- copyright notice -->
+<footer>
+    <p>&copy; 2022 Let'sFood. ALL RIGHTS RESERVED.</p>
+</footer>
+
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

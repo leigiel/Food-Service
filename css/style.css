@@ -1,90 +1,287 @@
-
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family: poppins;
+body {
+    font-family: 'Readex Pro', sans-serif;
 }
-.navcontainer{
 
+/* nav section */
+.nav-bar-container {
+    background-color: #fff9ea;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
-    background-color: #fff9ea;
-    height: 108px;
     align-items: center;
-    padding: 0px 140px;
-
+    padding: 10px 20px;
 }
 
-.navlogo{
-
-    width: 140px;
-    height: 45px;
-
+.logo-LetsFood img {
+    width: 169px;
+    height: 47px;
+    margin-left: 141px;
 }
 
-nav ul li{
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 100px;
+}
 
+.nav-menu ul {
+    display: flex;
     list-style: none;
-    color: #6b6963;
-    font-weight: 600px;
 }
 
-nav ul{
-
-    display: flex;
-    gap: 40px;
-
+.nav-menu ul li {
+    margin: 0 15px;
 }
 
-.navicon{
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #615F5A;
+    font-weight: bold;
+}
 
+.nav-icon {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
     align-items: center;
-
+    margin-right: 70px;
 }
 
-.signin{
+.search {
+    margin: 0 30px;
+}
 
+.nav-icon div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-icon .signin {
+    display: flex;
+    justify-content: space-between;
     background-color: #ffcb45;
     border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 30px;
     padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: 600;
-
 }
 
-.herocontainer{
+
+/* hero section */
+
+.hero-container {
     background-image: url('/images/shapes.png');
-    height: 500px;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    padding: 12px 140px;
+    width: 100%;
+    text-align: center;
 
 }
 
-.leftcontainer{
-    height: 100%;
+.hero-container .hero-content {
+    display: flex;
+    text-align: center;
+    width: 800px;
+
+}
+
+.hero-left-container {
+    width: 600px;
+    text-align: center;
+}
+
+
+.hero-right-container {
+    width: 200px;
     display: flex;
     align-items: center;
-    gap: 50px ;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
 }
 
-.howitworkscontainer{
-    margin-top: 80px;
-    margin-bottom: 100px;
+.size22 {
+    font-size: 22px;
 }
-.what-weserve-img{
+
+.menu-container,
+.how-it-works-container {
     display: flex;
-    justify-items: center;
-    margin: 0 200px;
-    margin-top: 32px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
 }
-.serve-img{
-    width: 180px;
-    height: 180px;
+
+.font-ash {
+    color: #615F5A;
 }
+
+.how-it-works-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+
+.size28 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.button {
+    background-color: #ffcb45;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.menu-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-items .review-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.how-it-works-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* review section */
+
+.review-container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Align items vertically */
+    justify-content: space-around;
+    /* Distribute space evenly */
+    padding: 40px 0;
+}
+
+.review-img-tile {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 300px;
+    gap: 10px;
+}
+
+.top-review-img {
+    grid-column: 1 / span 2;
+}
+
+.bottom-review-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.top-review-img img,
+.bottom-review-img img {
+    width: 100%;
+    height: auto;
+    /* Ensured proper aspect ratio */
+}
+.review-heading {
+    text-align: left;
+    padding-left: 20px;
+    max-width: 500px;
+}
+.review-comment {
+    margin-top: 20px;
+}
+.review-comment p {
+    margin-bottom: 10px;
+}
+
+/* join us ection */
+.join-us-section{
+    background-image: url(/images/background2.png);
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+    
+    .footer-container > div {
+        flex: 1;
+        margin: 0 10px;
+    }
+    
+    .footer-container p {
+        margin: 5px 0;
+    }
+    
+    .logo-LetsFood img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .social-logo {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .social-logo div {
+        display: flex;
+        align-items: center;
+    }
+    
+    .font-ash {
+        color: #666;
+    }
+    
+    /* footer */
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f8f8f8;
+        color: #666;
+        font-size: 14px;
+    }
+    
