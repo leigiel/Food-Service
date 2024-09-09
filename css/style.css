@@ -1,4 +1,4 @@
-
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-
 }
 
 /* Navigation Bar */
@@ -55,6 +54,27 @@ body {
 .signin.button:hover {
     color: #ffcb45; 
     background-color: black;
+}
+
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+    .nav-bar-container {
+        padding: 10px 20px;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-icon {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .signin.button {
+        padding: 8px 20px;
+    }
 }
 
 /* Hero Section */
@@ -106,6 +126,26 @@ body {
     background-color: black;
 }
 
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left-container h1 {
+        font-size: 32px;
+    }
+
+    .hero-left-container p {
+        margin: 10px 0;
+    }
+
+    .hero-left-container .button {
+        padding: 8px 20px;
+    }
+}
+
 /* How It Works Section */
 .how-it-works-container {
     padding: 80px 0;
@@ -150,6 +190,26 @@ body {
     margin-top: 10px;
 }
 
+/* Responsive How It Works Section */
+@media (max-width: 768px) {
+    .how-it-works-container {
+        padding: 40px 0;
+    }
+
+    .how-it-works-img {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .how-it-works-img img {
+        max-width: 100px;
+    }
+
+    .how-it-works-img h3 {
+        font-size: 24px;
+    }
+}
+
 /* Menu Section */
 .menu-container {
     padding: 80px 0;
@@ -176,7 +236,7 @@ body {
     color: #666;
 }
 
-.more-menu{
+.more-menu {
     margin-top: 50px;
     background-color: #ffcb45;
     font-weight: bold;
@@ -186,9 +246,29 @@ body {
     border-radius: 50px;
 }
 
-.more-menu .button:hover{
+.more-menu .button:hover {
     color: #ffcb45; 
     background-color: black;
+}
+
+/* Responsive Menu Section */
+@media (max-width: 768px) {
+    .menu-container {
+        padding: 40px 0;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-items img {
+        max-width: 150px;
+    }
+
+    .more-menu {
+        padding: 8px 20px;
+    }
 }
 
 /* Review Section */
@@ -197,7 +277,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .review-img-tile {
@@ -205,10 +284,12 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
 }
+
 .top-review-img {
     grid-column: 1 / -1;
     width: 100%;
 }
+
 .bottom-review-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -239,16 +320,40 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-
 }
 
+/* Responsive Review Section */
+@media (max-width: 768px) {
+    .review-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .review-heading {
+        max-width: 100%;
+    }
+
+    .review-img-tile {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-review-img {
+        grid-template-columns: 1fr;
+    }
+
+    .top-review-img img,
+    .bottom-review-img img {
+        height: auto;
+    }
+}
+
+/* Review Area */
 .review-area-container {
     background-color: #f1f1f1;
     padding: 40px 30px;
     border-radius: 15px;
     box-sizing: border-box;
-    text-wrap:wrap;
- 
+    text-wrap: wrap;
 }
 
 .review-area {
@@ -263,11 +368,13 @@ body {
 
 .review-others p {
     margin: 0;
-color: black;
+    color: black;
 }
-.comment{ 
+
+.comment { 
     color: #615F5A;
 }
+
 .review-others i {
     color: #ffcb45;
     margin-right: 5px;
@@ -278,10 +385,26 @@ color: black;
     font-style: italic;
 }
 
+/* Responsive Review Area */
+@media (max-width: 768px) {
+    .review-area {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .review-area img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .review-area-container {
+        padding: 20px 15px;
+    }
+}
 
 /* Join Us Section */
 .join-us-section {
-   background-image: url(/images/background2.png);
+    background-image: url(/images/background2.png);
     padding: 80px 0;
     text-align: center;
 }
@@ -304,6 +427,21 @@ color: black;
 .join-us-section .button button:hover {
     color: #ffcb45; 
     background-color: black;
+}
+
+/* Responsive Join Us Section */
+@media (max-width: 768px) {
+    .join-us-section {
+        padding: 40px 0;
+    }
+
+    .join-us-section h3 {
+        font-size: 24px;
+    }
+
+    .join-us-section .button button {
+        padding: 8px 20px;
+    }
 }
 
 /* Footer Section */
@@ -348,6 +486,7 @@ color: black;
 .footer-container .third-column p:first-child {
     font-weight: bold;
 }
+
 footer {
     text-align: center;
     padding: 10px;
@@ -356,3 +495,26 @@ footer {
     font-size: 14px;
 }
 
+/* Responsive Footer Section */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-container .logo-LetsFood img {
+        width: 100px;
+    }
+
+    .social-logo {
+        justify-content: center;
+    }
+}
+
+/* Responsive Global Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
